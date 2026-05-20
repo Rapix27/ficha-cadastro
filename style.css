@@ -29,3 +29,7 @@ body {
 .cadastro-topo {
     flex: 4;
 }
+
+.cadastro-topo p {
+    padding-right: 250px;
+}
