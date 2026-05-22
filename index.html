@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <title>Calculadora de Comissão</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ficha de Cadastro</title>
 </head>
 <body>
-     <div class="topo">
-        <div class="image">
-              <img src="images/prancheta.png"> 
+
+    
+    <div class="calculadora-container">
+        <h2>Calculadora de Comissão</h2>
+        
+        <div class="form-group">
+            <label for="valorVenda">Valor Total da Venda (R$):</label>
+            <input type="number" id="valorVenda" placeholder="Ex: 1000">
         </div>
-         
-       
-       <div class="cadastro-topo">
-            <h1>Ficha de cadastro de funcionário</h1> 
-            <p> Formulário para coleta de dados pessoais,documentos e informações necessárias para admissão e registro interno do colaborador</p>
+
+        <div class="form-group">
+            <label for="porcentagem">Porcentagem da Comissão (%):</label>
+            <input type="number" id="porcentagem" placeholder="Ex: 5">
         </div>
+
+        <button id="btnCalcular">Calcular</button>
+
+        <div id="resultado"></div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
