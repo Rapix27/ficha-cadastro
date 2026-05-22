@@ -31,5 +31,27 @@ body {
 }
 
 .cadastro-topo p {
-    padding-right: 250px;
+    padding-right: 100px;
+}
+
+.documentos-necessarios {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    background-color: #FFDEAD;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.imagem-documentos {
+    flex: 1;
+}
+
+.dados-left {
+    flex: 2;
+}
+
+.dados-right {
+    flex: 2;
 }
