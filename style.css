@@ -73,6 +73,7 @@ body {
     background-color:#fff;
     border-radius: 10px;
     margin-top: 30px;
+    flex-direction: column;
 }
 
 .informacao-funcionario {
@@ -87,4 +88,34 @@ body {
     padding: 2px 8px 2px 8px;
     font-size: 12px;
     border-radius: 4px;
+}
+
+.pequeno {
+    flex: 1;
+        display: flex;
+    flex-direction: column;
+}
+
+.medio {
+    flex: 2;
+        display: flex;
+    flex-direction: column;
+}
+
+.grande {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.extra {
+    flex: 6;
+     display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    display: flex;
+    width: 950px;
+    gap: 20px;
 }
