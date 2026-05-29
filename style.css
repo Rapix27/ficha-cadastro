@@ -7,74 +7,90 @@ body {
 .topo {
     display: flex;
     width: 1000px;
-    background-color: #0000ff;
+    background-color: #652ea3;
     border-radius: 10px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 10px;
     padding: 25px;
-    color: #fff;
+    color: #c9b12ce0;
 }
 
-.topo img {
-    width: 80px;
-    
-}
-
-.image {
+.image{
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
 }
-.cadastro-topo {
+
+.topo img{
+    width: 125px;
+}
+
+.cadastro-topo{
     flex: 4;
 }
 
-.cadastro-topo p {
-    padding-right: 100px;
-}
-
-.documentos-necessarios {
+.documentosnecessarios{
     display: flex;
-    width: 1000px;
     margin: auto;
-    background-color: #FFDEAD;
+    width: 1000px;
+    border-radius: 25px;
     padding: 25px;
     margin-top: 30px;
-    border-radius: 10px;
+    background-color: #FFF6D6;
+    border: 3px solid #e6a50d;
+    flex-direction: column;
+    border-left: 13px solid #d4621160;
 }
 
-.imagem-documentos {
+.documentosnecessarios h2{
+    margin-left: 200px;
+    color: #FFB303;
+    font-size: 22px;
+}
+
+.colunas{
+    display: flex;
+    font-size: 20px;
+}
+
+.image-doc{
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-.dados-left {
+.dados-left{
     flex: 2;
 }
 
-.dados-right {
+.dados-left h1 {
+    font-size: 20px;
+    color: #FFB303;
+}
+
+.dados-right{
     flex: 2;
 }
 
-.imagem-documentos img {
-    width :85px;
-   
+.documentosnecessarios img{
+    width: 100px;
 }
 
-.dados-pessoais {
+.dados-pessoais{
     display: flex;
     width: 1000px;
     margin: auto;
-    padding: 25px;
-    background-color:#beb8b8;
-    border-radius: 10px;
     margin-top: 30px;
-    flex-direction: column;
-     
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    flex-direction: column  ;
+}
+
+.dados-pessoais h2{
+    color: #652ea3;
 }
 
 .informacao-funcionario {
@@ -83,59 +99,371 @@ body {
     width: 950px;
 }
 
-.informacao-funcionario p {
-    background-color: #ccc;
-    line-height: 3;
+.informacao-funcionario p{
+    background-color: #EDF0F5;
+    line-height: 5;
+    border-radius: 5px;
+    border-width: 5px;
+    border: 2px solid #E6E6E6;
     padding: 2px 8px 2px 8px;
     font-size: 12px;
-    border-radius: 4px;
 }
 
-.pequeno {
+.documentos{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    flex-direction: column  ;
+}
+
+.documentos h2{
+    color: #652ea3;
+}
+
+.dados-iden {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+}
+
+.dados-iden p{
+    background-color: #EDF0F5;
+    line-height: 5;
+    border-radius: 5px;
+    border-width: 5px;
+    border: 2px solid #E6E6E6;
+    padding: 1px 4px 1px 4px;
+    font-size: 12px;
+}
+
+.estado{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    flex-direction: column  ;
+}
+
+.estado h2{
+    color: #652ea3;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+}
+
+.info p{
+    background-color: #EDF0F5;
+    line-height: 5;
+    border-radius: 5px;
+    border-width: 5px;
+    border: 2px solid #E6E6E6;
+    padding: 1px 4px 1px 4px;
+    font-size: 12px;
+}
+
+.admi{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    flex-direction: column  ;
+}
+
+.admi h2{
+    color: #652ea3;
+}
+
+.empr {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+}
+
+.empr p{
+    background-color: #EDF0F5;
+    line-height: 5;
+    border-radius: 5px;
+    border-width: 5px;
+    border: 2px solid #E6E6E6;
+    padding: 1px 4px 1px 4px;
+    font-size: 12px;
+}
+
+.resp{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    flex-direction: column  ;
+}
+
+.resp h2{
+    color: #652ea3;
+}
+
+.conf {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+}
+
+.conf p{
+    background-color: #EDF0F5;
+    line-height: 5;
+    border-radius: 5px;
+    border-width: 5px;
+    border: 2px solid #E6E6E6;
+    padding: 1px 4px 1px 4px;
+    font-size: 12px;
+}
+
+.pequeno{
     flex: 1;
-        display: flex;
+    display: flex;
     flex-direction: column;
 }
 
-.medio {
+.medio{
     flex: 2;
-        display: flex;
+    display: flex;
     flex-direction: column;
 }
 
-.grande {
+.grande{
     flex: 3;
     display: flex;
     flex-direction: column;
 }
 
-.extra {
+.extra{
     flex: 6;
-     display: flex;
+    display: flex;
     flex-direction: column;
 }
 
-.linha {
+.linha{
     display: flex;
     width: 950px;
-    gap: 20px;
+    gap: 25px;
     margin-top: 10px;
 }
 
 input {
-    height: 32px;
-    border: solid 1px #cdcdcd;
+    height: 10px;
+    border: solid 2px #000;
     border-radius: 4px;
     margin-top: 8px;
     outline: none;
     padding: 6px;
 }
 
-select {
-    height: 43px;
-    border: solid 1px #cdcdcd;
-    border-radius: 4px;
-    margin-top: 8px;
-    outline: none;
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
 
+h1{
+    font-size: 42px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h4{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+div{
+    margin-top: 10px;
+}
+
+input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+label{
+    font-size: 14px;
+}
+
+.titulo{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.grau-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.opcao{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.campo-radio{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+select{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-horario{
+    background-color: #eeeeee;
+    padding: 10px 14px;
+    border-radius: 18px;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.titulo-horario{
+    color: #941bdae0;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.subtitulo{
+    font-size: 14px;
+    margin-bottom: 4px;
+    margin-top: 8px;
+}
+
+.horario-container{
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.campo-hora{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-hora label{
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.campo-hora input{
+    width: 160px;
+    height: 26px;
+    padding: 2px 6px;
+    border-radius: 8px;
+    border: 1px solid #d5d5d5;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.texto-ate{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.caixa-declaracao{
+    background-color: #f5f5f5;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.caixa-declaracao p{
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.assinaturas{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.assinatura-box{
+    width: 300px;
+    text-align: center;
+}
+
+.linha-assinatura{
+    border-top: 1px solid #777;
+    margin-bottom: 10px;
+}
+
+.assinatura-box h4{
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.assinatura-box p{
+    font-size: 13px;
+    color: #666;
+}
+
+.botoes{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.btn-limpar{
+    background-color: #3e468b;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-enviar{
+    background-color: #7f1cc0;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-limpar:hover,
+.btn-enviar:hover{
+    opacity: 0.9;
 }

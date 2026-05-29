@@ -3,89 +3,619 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ficha de Cadastro</title>
 </head>
 <body>
-     <div class="topo">
+    <form>
+
+    <div class="topo">
         <div class="image">
-            <img src="images/cadastro.png">
+            <img src="images/cadastro (1).png"></img>
         </div>
         <div class="cadastro-topo">
-             <h1>Ficha de Cadastro de Funcionário</h1>
-             <p>Formulário para coleta de dados pessoais, documentos e informações necessárias para admissão e registro interno do colaborador.</p>
+            <h1>Ficha de Cadastro de Funcionário</h1>
+            <p>Formurlario para coleta de dados pessoais, documentos e informações necessárias  para admissão e registro interno do colaborador</p>
         </div>
- </div>
- 
-     <div class="documentos-necessarios">
-        <div class="imagem-documentos">
-            <img src="images/cadastro (1).png">
-        </div>
-    <div class="dados-left">
-        <ul>
-            <li>Documeto de Identidade</li>
-            <li>CPF:</li>
-            <li>Carteira de trabalho (fisica ou digital)</li>
-            <li>Comprovante de Residência</li>
-        </ul>
-    </div>
-    <div class="dados-right">
-        <ul>
-            <li>Titulo de eleitor</li>
-            <li>Certificado de reservista (para homens)</li>
-            <li>Certidão de nascimento ou casamento</li>
-            <li>PIS/PASEP (se possuir)</li>
-        </ul>
-    </div>
     </div>
 
-     <div class="dados-pessoais">
+    <div class="documentosnecessarios">
+        <h2>Documentos necessários para contratação</h2>
+        <div class="colunas">
+        <div class="image-doc">
+            <img src="images/cadastro.png"></img>
+        </div>
+        <div class="dados-left">
+            <ul>
+                <li>Documento de Identidade (RG)</li>
+                <li>CPF</li>
+                <li>Carteira de trabalho (fisica ou digital)</li>
+                <li>Comprovante de residência atualizado</li>
+            </ul>
+        </div>
+        <div class="dados-right">
+            <ul>
+                <li>Titulo de eleitor</li>
+                <li>Certificado de reservista (para homens)</li>
+                <li>Certidão de nascimento ou casamento</li>
+                <li>PIS/PASEP (se possuir)</li>
+            </ul>
+        </div>
+       </div>
+    </div>
+    <div class="dados-pessoais">
         <div class="informacao-funcionario">
             <h2>1. Dados Pessoais</h2>
             <p>Informações básicas do funcionário</p>
         </div>
-
+        
         <div class="linha">
             <div class="grande">
-              <label>Nome Completo</label>
-              <input type="text"> 
+        <label>Nome Completo</label>
+        <input type="text">
+        </div>
+
+        <div class="medio">
+            <label>Nome Social</label>
+            <input type="text">
+        </div>
+
+        <div class="medio">
+            <label>Sexo</label>
+            <select id="Sexo">
+            <option value="" disabled selected hidden>Selecione</option>
+            <option value="">Masculino</option>
+            <option value="">Feminino</option>
+            </select>
+        </div>
+        </div>
+
+        <div class="linha">
+
+            <div class="pequeno">
+                <label>Nacionalidade</label>
+                <input type="text">
             </div>
+
+            <div class="pequeno">
+                <label>Data de nascimento</label>
+                <input type="date">
+            </div>
+
+            <div class="pequeno">
+                <label>Local de nascimento</label>
+                <input type="text">
+            </div>
+
+            <div class="pequeno">
+                <label>UF</label>
+                <select id="UF">
+    <option value="" disabled selected hidden>Selecione</option>
+    <option value="">AC</option>
+    <option value="">AL</option>
+    <option value="">AP</option>
+    <option value="">AM</option>
+    <option value="">BA</option>
+    <option value="">CE</option>
+    <option value="">DF</option>
+    <option value="">ES</option>
+    <option value="">GO</option>
+    <option value="">MA</option>
+    <option value="">MT</option>
+    <option value="">MS</option>
+    <option value="">MG</option>
+    <option value="">PA</option>
+    <option value="">PB</option>
+    <option value="">PR</option>
+    <option value="">PE</option>
+    <option value="">PI</option>
+    <option value="">RJ</option>
+    <option value="">RN</option>
+    <option value="">RS</option>
+    <option value="">RO</option>
+    <option value="">RR</option>
+    <option value="">SC</option>
+    <option value="">SP</option>
+    <option value="">SE</option>
+    <option value="">TO</option>
+    </select>
+            </div>
+
+        </div>
+
+        <div class="linha">
+
+            <div class="extra">
+            <label>Endereço (rua, nº, complemento)</label>
+            <input type="text">
+            </div>
+
+        </div>
+
+        <div class="linha">
+
             <div class="medio">
-                <label>Nome Social</label>
+                <label>Bairro</label>
                 <input type="text">
             </div>
 
             <div class="medio">
-                <label>Sexo</label>
-                <select>
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="outro">Outro</option>
-                </select>
-        
-               </div>
-              </div>
-             
-              <div class="linha">
-             <div class="pequeno">
-                    <label>Data de Nascimento</label>
-                    <input type="date">
-             
-                   
+                <label>Cidade</label>
+                <input type="text">
+            </div>
+
+            <div class="pequeno">
+                <label>CEP</label>
+                <input type="text" placeholder="00000-000">
+            </div>
+
+            <div class="pequeno">
+                <label>Telefone</label>
+                <input type="text" placeholder="(00) 00000-0000">
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<div class="corpo">
+
+    <div class="documentos">
+        <div class="dados-iden">
+            <h2>2. Documentos</h2>
+            <p>Dados para Identificação e registro</p>
+        </div>
+
+            <div class="linha">
+
+                <div class="medio">
+                <label>RG</label>
+                <input type="text">
                 </div>
 
-                 <div class="medio">
-                        <label>Nacionalidade</label>
-                        <input type="text">
+            <div class="medio">
+                <label>Data de Emissão</label>
+                <input type="date">
             </div>
-              <div class="medio">
-                       <label>Naturalidade</label>
-                        <input type="text">
+
+            <div class="medio">
+                <label>Órgão emissor</label>
+                <input type="text">
+            </div>
+
+            <div class="medio">
+                <label>UF</label>
+                <select id="UF">
+    <option value="" disabled selected hidden>Selecione</option>
+    <option value="">AC</option>
+    <option value="">AL</option>
+    <option value="">AP</option>
+    <option value="">AM</option>
+    <option value="">BA</option>
+    <option value="">CE</option>
+    <option value="">DF</option>
+    <option value="">ES</option>
+    <option value="">GO</option>
+    <option value="">MA</option>
+    <option value="">MT</option>
+    <option value="">MS</option>
+    <option value="">MG</option>
+    <option value="">PA</option>
+    <option value="">PB</option>
+    <option value="">PR</option>
+    <option value="">PE</option>
+    <option value="">PI</option>
+    <option value="">RJ</option>
+    <option value="">RN</option>
+    <option value="">RS</option>
+    <option value="">RO</option>
+    <option value="">RR</option>
+    <option value="">SC</option>
+    <option value="">SP</option>
+    <option value="">SE</option>
+    <option value="">TO</option>
+    </select>
+            </div>
 
         </div>
-         <div class="linha">
-         <div class="medio"></div>
-           
+
+        <div class="linha">
+
+            <div class="medio">
+                <label>CPF</label>
+                <input type="text" placeholder="000.000.000-00">
+            </div>
+
+            <div class="medio">
+                <label>Titulo de Eleitor</label>
+                <input type="text">
+            </div>
+
+            <div class="pequeno">
+                <label>Zona</label>
+                <input type="text">
+            </div>
+
+            <div class="pequeno">
+                <label>Seção</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+        <div class="linha">
+
+            <div class="medio">
+                <label>CTPS (Nº)</label>
+                <input type="text">
+            </div>
+
+            <div class="medio">
+                <label>Série</label>
+                <input type="text">
+            </div>
+
+            <div class="medio">
+                <label>UF</label>
+                <select id="UF">
+    <option value="" disabled selected hidden>Selecione</option>
+    <option value="">AC</option>
+    <option value="">AL</option>
+    <option value="">AP</option>
+    <option value="">AM</option>
+    <option value="">BA</option>
+    <option value="">CE</option>
+    <option value="">DF</option>
+    <option value="">ES</option>
+    <option value="">GO</option>
+    <option value="">MA</option>
+    <option value="">MT</option>
+    <option value="">MS</option>
+    <option value="">MG</option>
+    <option value="">PA</option>
+    <option value="">PB</option>
+    <option value="">PR</option>
+    <option value="">PE</option>
+    <option value="">PI</option>
+    <option value="">RJ</option>
+    <option value="">RN</option>
+    <option value="">RS</option>
+    <option value="">RO</option>
+    <option value="">RR</option>
+    <option value="">SC</option>
+    <option value="">SP</option>
+    <option value="">SE</option>
+    <option value="">TO</option>
+    </select>
+            </div>
+
+            <div class="medio">
+                <label>Data de emissão</label>
+                <input type="date">
+            </div>
+
+        </div>
+
+        <div class="linha">
+            
+            <div class="medio">
+                <label>PIS/PASEP (se possuir)</label>
+                <input type="text" placeholder="000.00000.00-0">
+            </div>
+
+            <div class="medio">
+                <label>Reservista (nº)</label>
+                <input type="text">
+            </div>
+
+            <div class="medio">
+                <label>Categoria</label>
+                <input type="text">
+            </div>
+
+        </div>
     </div>
+
+    <div class="estado">
+        <div class="info">
+            <h2>3. Filiação e estado civil</h2>
+            <p>Informações fanmiliares e escolares</p>
+        </div>
+        <div class="linha">
+
+            <div class="grande">
+                <label>Nome do pai</label>
+                <input type="text">
+            </div>
+
+             <div class="grande">
+                <label>Nome da mãe</label>
+                <input type="text">
+             </div>
+        </div>
+
+        <div class="linha">
+
+            <div class="medio">
+            <label>Estado Civil</label>
+            <select>
+                <option value="" disabled selected hidden>Selecione</option>
+                <option>Solteiro(a)</option>
+                <option>Casado(a)</option>
+                <option>Divorciado(a)</option>
+                <option>Viúvo(a)</option>
+                <option>União estável</option>
+            </select>
+            </div>
+
+            <div class="grande">
+                <label>Cônjuge (nome completo)</label>
+                <input type="text">
+            </div>
+
+        </div>
+        
+        <div class="linha">
+           
+            <div class="medio">
+
+                <label class="titulo">Grau de instrução</label>
+
+                <div class="grau-container">
+
+                    <div class="opcao">
+                        <input type="radio" name="grau">
+                        <label>Completo</label>
+                    </div>
+
+                    <div class="opcao">
+                        <input type="radio" name="grau">
+                        <label>Incompleto / Cursando</label>
+                    </div>
+
+                    <div class="grande">
+                        <label>Curso / Escolaridade</label>
+                        <input type="text">
+                    </div>
+
+            </div>
+
+                 </div>
+            </div>
+        </div>
+
+        <div class="admi">
+            <div class="empr">
+                <h2>4. Informações para admissão</h2>
+                <p>Dados preenchidos pela empressa</p>
+            </div>
+
+            <div class="linha">
+
+                <div class="campo-radio">
+                  <label>Primeiro emprego?</label>
+
+                <div class="opcoes">
+                  <input type="radio" name="emprego">
+                  <span>Primeiro emprego</span>
+
+                  <input type="radio" name="emprego">
+                  <span>Já trabalhou antes</span>
+                </div>
+            </div>
+
+            <div class="campo-radio">
+                <label>Vale transporte?</label>
+                <div class="opcoes">
+                    <input type="radio" name="vale">
+                    <span>Sim</span>
+                    
+                    <input type="radio" name="vale">
+                    <span>Não</span>
+                </div>
+            </div>
+
+                <div class="pequeno">
+                    <label>Salário (R$)</label>
+                    <input type="text">
+                </div>
+
+                <div class="grande">
+                    <label>Salário por extenso</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="linha">
+
+                <div class="grande">
+                        <label>Função / Cargo</label>
+                        <input type="text">
+                </div>
+
+                <div class="medio">
+                        <label>Dia de folga</label>
+                        <select>
+                            <option value="" disabled selected hidden>Selecione</option>
+                            <option>Segunda-feira</option>
+                            <option>Terça-feira</option>
+                            <option>Quarta-feira</option>
+                            <option>Quinta-feira</option>
+                            <option>Sexta-feira</option>
+                            <option>Sábado</option>
+                            <option>Domingo</option>
+                        </select>
+                </div>
+
+                </div>
+                
+                <div class="linha">
+
+                    <div class="medio">
+                        <label>Carga horária mensal</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="medio">
+                        <label>Carga horária semanal</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="medio">
+                        <label>Contrato de experiência</label>
+                        <select>
+                            <option value="" disabled selected hidden>Selecione</option>
+                            <option>30 dias</option>
+                            <option>45 dias</option>
+                            <option>60 dias</option>
+                            <option>90 dias</option>
+                        </select>
+                    </div>
+
+                    <div class="medio">
+                        <label>Prorrogação</label>
+                        <select>
+                            <option value="" disabled selected hidden>Selecione</option>
+                            <option>30 dias</option>
+                            <option>45 dias</option>
+                            <option>60 dias</option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+                <div class="linha">
+                    <div class="box-horario">
+
+                        <h3 class="titulo-horario">Horário de trabalho</h3>
+                        <h4 class="subtitulo">Segunda à sexta-feira</h4>
+
+                    <div class="horario-container">
+
+                    <div class="campo-hora">
+                        <label>Entrada</label>
+                        <input type="time">
+                    </div>
+
+                    <div class="campo-hora">
+                        <label>Intervalo</label>
+                        <input type="time">
+                    </div>
+
+                    <span class="texto-ate">até</span>
+
+                     <div class="campo-hora">
+                        <label>&nbsp;</label>
+                        <input type="time">
+                    </div>
+
+                    <div class="campo-hora">
+                        <label>Saída</label>
+                        <input type="time">
+                    </div>
+
+                    </div>
+
+
+                        <h4 class="subtitulo">Sábado</h4>
+
+                    <div class="horario-container">
+
+                    <div class="campo-hora">
+                        <label>Entrada</label>
+                        <input type="time">
+                    </div>
+
+                    <div class="campo-hora">
+                        <label>Intervalo</label>
+                        <input type="time">
+                    </div>
+
+                    <span class="texto-ate">até</span>
+
+                    <div class="campo-hora">
+                        <label>&nbsp;</label>
+                        <input type="time">
+                    </div>
+
+                    <div class="campo-hora">
+                        <label>Saída</label>
+                        <input type="time">
+                    </div>
+
+                    </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="final">
+
+            <div class="resp">
+            <div class="conf">
+                <h2>5. Responsabilidade pelas informações</h2>
+                <p>Confirmação final</p>
+            </div>
+
+            <div class="linha">
+
+                <div class="caixa-declaracao">
+                 <p>
+        Declaro que as informações acima prestadas são verdadeiras e completas, e que estou ciente de que a falsidade das mesmas poderá acarretar as penalidades previstas em lei, além da rescisão do contrato de trabalho.
+                 </p>
+
+                </div>
+
+            </div>
+
+            <div class="linha">
+                <label>Data de ciência</label>
+                <input type="date">
+            </div>
+
+            <div class="assinaturas">
+
+            <div class="assinatura-box">
+            <div class="linha-assinatura"></div>
+                <h4>Empregador</h4>
+                <p>Assinatura e carimbo</p>
+            </div>
+
+            <div class="assinatura-box">
+            <div class="linha-assinatura"></div>
+
+            <h4>Empregado</h4>
+            <p>Assinatura</p>
+            </div>
+
+            </div>
+
+        </div>
+        </div>
+
+            <div class="botoes">
+
+                <button type="reset" class="btn-limpar">
+                    Limpar
+                </button>
+
+                <button type="submit" class="btn-enviar">
+                    Salvar Cadastro
+                </button>
+
+            </div>
+
+    </div>
+</div>
+    
+</form>
 </body>
+<script src="script.js"></script>
 </html>
